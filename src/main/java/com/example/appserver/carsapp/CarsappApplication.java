@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.example.appserver.carsapp.da.CarRepository;
 import com.example.appserver.carsapp.da.DriverRepository;
@@ -26,6 +27,7 @@ import com.example.appserver.carsapp.domain.CarDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
+@ComponentScan(basePackages={"com.example.appserver.carsapp"})
 public class CarsappApplication {
 	
 	private static final Logger logger = LoggerFactory.getLogger(CarsappApplication.class);
