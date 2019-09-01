@@ -27,7 +27,7 @@ import com.example.appserver.carsapp.domain.CarDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringBootApplication
-@ComponentScan(basePackages={"com.example.appserver.carsapp"})
+@ComponentScan(basePackages={"com.example.appserver"})
 public class CarsappApplication {
 	
 	private static final Logger logger = LoggerFactory.getLogger(CarsappApplication.class);

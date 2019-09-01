@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Objects;
 
 
-// serializable is for passing data 
+/// Serializable is for passing data 
 @Entity
 public class CarDriver implements Serializable {
 
@@ -32,7 +32,6 @@ public class CarDriver implements Serializable {
     public CarDriver() { // empty c'tor is the default c'tor
     	super();
     }
-    
     public CarDriver(Car car, boolean isMain) {
         this.car = car;
         this.isMain=isMain;
